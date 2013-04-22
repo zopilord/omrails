@@ -3,6 +3,7 @@
 $btnPrimaryBackground: green;
 $navbarBackgroundHighlight: black;
 $navbarBackground: black;
+$navbarLinkColorHover: white;
 @import 'bootstrap';
 body{
 	padding-top:60px;
@@ -21,4 +22,11 @@ body{
 }
 a{
 	color: $green;
+}
+a:hover{
+	color: $black;
+	text-decoration: none;
+}
+.btn-primary:hover{
+	box-shadow: 5px 5px 5px #888888;
 }
