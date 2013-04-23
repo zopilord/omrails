@@ -1,11 +1,14 @@
 <% if user_signed_in? %>
-	<h1>NICE! You're Signed in!</h1>
+	<div class="hero-unit">
+	<h1>"Dreams are an endless source of imagination"</h1>
+	<p>
+		<%= link_to "Me", "http://pixelprospector.com"%>
+	</p>
 	<% else %>
 <div class="hero-unit">
-	<h1>Welcome to my effin page</h1>
+	<h1>"Dreams are an endless source of imagination"</h1>
 	<p>
-		whatever dude
-		<%= link_to "One Month Rails", "http://onemonthrails.com"%>
+		<%= link_to "Me", "http://pixelprospector.com"%>
 	</p>
 	<p>
 		<%= link_to "Sign up Now!",new_user_registration_path,class: "btn btn-primary" %>
