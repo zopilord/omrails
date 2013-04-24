@@ -1,4 +1,5 @@
 class Pin < ActiveRecord::Base
-  attr_accessible :description
-  validates :description, presence: true, length: {:maximum=> 10}
+  attr_accessible :description, :title
+  validates :title, uniqueness: true
+  validates :title, presence: true, length: { :maximum => 10 }
 end

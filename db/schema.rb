@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(:version => 20130423204307) do
 
   create_table "pins", :force => true do |t|
     t.string   "description"
+    t.string   "title"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
