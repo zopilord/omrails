@@ -1,13 +1,19 @@
 <tr>
+    <% if current_user == pin.user %>
     <td><%=  link_to pin.title, pin%></td>
+
     <td>
-    		<div class="btn-group">
-    		<%= link_to  edit_pin_path(pin),  class: 'btn' do %>
-    			<i class="icon-edit"></i>
-    		<% end %>
-    		<%= link_to pin, class: 'btn', method: :delete, data: { confirm: 'Are you sure?' } do  %>
-    		<i class="icon-trash"></i>
-    		<% end %>
-    		</div>
+        <div class="btn-group">
+        <%= link_to  edit_pin_path(pin),  class: 'btn' do %>
+          <i class="icon-edit"></i>
+        <% end %>
+        <%= link_to pin, class: 'btn', method: :delete, data: { confirm: 'Are you sure?' } do  %>
+        <i class="icon-trash"></i>
+        <% end %>
+        </div>
     </td>
-  </tr>
+    <% else %>
+      <td><%=  link_to pin.title, pin%></td>
+      <td></td>
+    <% end %>
+</tr>
