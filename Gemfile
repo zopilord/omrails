@@ -4,6 +4,7 @@ gem 'rails', '3.2.13'
 gem 'devise'
 gem 'simple_form'
 gem 'bootstrap-sass', '~> 2.3.1.0'
+gem 'better_errors'
 
 
 group :production do 
