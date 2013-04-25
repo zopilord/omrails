@@ -5,6 +5,7 @@ gem 'devise'
 gem 'simple_form'
 gem 'bootstrap-sass', '~> 2.3.1.0'
 gem 'better_errors'
+gem "paperclip", "~> 3.0"
 
 
 group :production do 
