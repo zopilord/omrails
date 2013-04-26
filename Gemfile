@@ -6,6 +6,8 @@ gem 'simple_form'
 gem 'bootstrap-sass', '~> 2.3.1.0'
 gem 'better_errors'
 gem "paperclip", "~> 3.0"
+gem 'aws-sdk', '~> 1.5.7'
+
 
 
 group :production do 

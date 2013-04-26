@@ -3,7 +3,7 @@ class Pin < ActiveRecord::Base
 
   validates :title, uniqueness: true
   
-  validates :title, presence: true, length: { :maximum => 10 }
+  validates :title, presence: true, length: { :maximum => 20 }
   
   validates :user_id, presence: true
 
@@ -12,7 +12,7 @@ class Pin < ActiveRecord::Base
   															size: { less_than: 5.megabytes }								
   belongs_to :user
 
-  has_attached_file :image , styles: {medium: "320x40>"}
+  has_attached_file :image , styles: {medium: "320x200>"}
 
 end
 

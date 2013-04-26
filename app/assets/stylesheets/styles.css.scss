@@ -20,17 +20,45 @@ body{
 	color: $grayLight;
 
 }
+
 a{
 	color: $blue;
 }
+
 a:hover{
 	color: $black;
 	text-decoration: none;
 }
+
 .btn-primary:hover{
 	box-shadow: 5px 5px 5px #888888;
 }
+
 .well h5{
 	padding-top: 0;
 	margin-top: 0;
 }
+
+/* Requires for Jquery Masony */
+.box{
+	margin: 5px;
+	padding: 5px;
+	font-size: 11px;
+	line-height: 1.4em;
+	float: left;
+	-web-kit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px #444;
+	width: 214px;
+}
+
+.box img{
+	display: block;
+	width: 100%;
+	-web-kit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
