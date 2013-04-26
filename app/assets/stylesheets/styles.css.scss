@@ -51,6 +51,7 @@ a:hover{
 	border-radius: 5px;
 	box-shadow: 1px 1px 10px #444;
 	width: 214px;
+	position: relative;
 }
 
 .box img{
@@ -60,5 +61,28 @@ a:hover{
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
+.title{
+	display: block;
+	text-align: center;
+}
+.box {
+  &:hover .btn-group {
+  	opacity: 0.5;
+  	animation-duration:  5s;
+  	-webkit-animation-duration: 5s; 
+}
+  }
+  .btn-group{
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		opacity: 0;
+  }
 
+.description{
+	margin: 10px 0 5px; 
+}  
+  //.upload{
+  //	position: absolute;
+  //}
 

@@ -7,34 +7,38 @@
 			  	<%= @pin.description %>
 				</p>
 				<% if current_user == @pin.user %>
-				<div class="btn-group">
-					<%= link_to edit_pin_path(@pin), class: 'btn' do%>
-						<i class="icon-edit"></i>
-					<% end %>
-					<%= link_to pins_path, class: 'btn' do%>
-						<i class="icon-circle-arrow-left"></i>
+					<div class="btn-group">
+						<%= link_to edit_pin_path(@pin), class: 'btn' do %>
+							<i class="icon-edit"></i>
+						<% end %>
+					</div>
+					<% if @pin.user.name? %>
+					<div class="pull-right">
+						<strong>
+							Posted By <%= @pin.user.name %>
+						</strong>
+					</div>
+					<% else %>
+					<div class="pull-right">
+						<p>Anonimous</p>
+					</div>
 					<% end %>	
-			</div>
-			<% if @pin.user.name? %>
-				<div class="pull-right">
-					<%= @pin.user.name %>
-				</div>
-				<% else %>
-				<div class="pull-right">
-					<p>Anonimous</p>
-				</div>
-			<% end %>	
-			<% else %>
-				<% if @pin.user.name? %>
-				<div class="pull-right">
-					<%= @pin.user.name %>
-				</div>
-				<% else %>
-				<div class="pull-right">
-					<p>Anonimous</p>
-				</div>
-			<% end %>	
-			<% end %>		
+					<% else %>
+					<% if @pin.user.name? %>
+					<div class="pull-right">
+						<strong>
+							Posted By <%= @pin.user.name %>
+						</strong>
+					</div>
+					<% else %>
+					<div class="pull-right">
+						<p>Anonimous</p>
+					</div>
+				<% end %>	
+			<% end %>
+			<%= link_to pins_path, class: 'btn' do%>
+						<i class="icon-circle-arrow-left"></i>
+					<% end %>			
 		</div>
 	</div>
 </div>
