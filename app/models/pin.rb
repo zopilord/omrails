@@ -13,7 +13,7 @@ class Pin < ActiveRecord::Base
   belongs_to :user
 
   has_attached_file :image , styles: {medium: "320x200>"}
-	def image_remote_url=(url_value)
+	def image_remote_url = (url_value)
 		self.image= URI.parse(url_value) unless url_value.blank?
 		super  
 	end
