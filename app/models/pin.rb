@@ -13,6 +13,5 @@ class Pin < ActiveRecord::Base
   belongs_to :user
 
   has_attached_file :image , styles: {medium: "320x200>"}
-
 end
 
