@@ -3,8 +3,9 @@
 </div> 
 <br>
 <br>
-<div data-spy="affix">
+<% if user_signed_in? %>
 	<%= link_to  new_pin_path, class: 'btn btn-small' do %>
    <i class="icon-upload"></i>New
-</div>
+	<% end %>
 <% end %>
+<%= will_paginate @pins %>

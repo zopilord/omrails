@@ -7,7 +7,9 @@ gem 'bootstrap-sass', '~> 2.3.1.0'
 gem 'better_errors'
 gem "paperclip", "~> 3.0"
 gem 'aws-sdk'
-
+gem 'faker', '1.1.2'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 
 group :production do 
